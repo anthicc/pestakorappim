@@ -20,17 +20,5 @@
         <script defer src="assets/js/sweetalert.min.js"></script>
         
     </head>
-   <style>
-    body {
-
-background-image : url ("https://awsimages.detik.net.id/community/media/visual/2021/12/21/ppi-madiun.jpeg?w=600&q=90");
-
-
-
-}
-</style>
-    <body 
-     x-data="main"
-    class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased horizontal full ltr"
-    :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu || 'horizontal', $store.app.layout, $store.app.rtlClass]"
->
+   
+    <body x-data="main" class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased horizontal full ltr" :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu, $store.app.layout,$store.app.rtlClass]">

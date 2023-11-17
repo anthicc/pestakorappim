@@ -56,7 +56,15 @@ $datanya = $user->fetch_assoc();
         </div>
 
         <!-- start theme customizer section -->
-        
+        <script>
+export default {
+  mounted() {
+    // Set nilai awal menu menjadi horizontal
+    this.$store.app.menu = 'horizontal';
+  },
+  // ...
+};
+</script>
         <!-- end theme customizer section -->
 
         <div class="main-container min-h-screen text-black dark:text-white-dark" :class="[$store.app.navbar]">

@@ -13,6 +13,7 @@ $datanya['level'] = "";
                                         >PESTAKORA</span
                                     >
                                 </a>
+                                <?php if(!empty($datanya['level'])) { ?>
 
                                 <a
                                     href="javascript:;"
@@ -25,6 +26,7 @@ $datanya['level'] = "";
                                         <path d="M20 17L4 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                                     </svg>
                                 </a>
+                                <?php  } ?>
                             </div>
                             <div>
                                     <a
@@ -126,23 +128,7 @@ $datanya['level'] = "";
                                        
                                     </form>
                                     
-                                    <button
-                                        type="button"
-                                        class="search_btn rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 dark:bg-dark/40 dark:hover:bg-dark/60 sm:hidden"
-                                        @click="search = ! search"
-                                    >
-                                        <svg
-                                            class="mx-auto h-4.5 w-4.5 dark:text-[#d0d2d6]"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <circle cx="11.5" cy="11.5" r="9.5" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
-                                            <path d="M18.5 18.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                        </svg>
-                                    </button>
+                                   
                                 </div>
                                 <div class="horizontal-logo flex items-center justify-between ltr:mr-2 rtl:ml-2 lg:hidden">
                                     <img class="inline w-8 ltr:-ml-1 rtl:-mr-1" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Logo_Kementerian_Perhubungan_Indonesia_%28Kemenhub%29.png" alt="image" />
