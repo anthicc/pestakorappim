@@ -14,8 +14,8 @@
                             </a>
                         </div>
                         <ul class="perfect-scrollbar relative h-[calc(100vh-80px)] space-y-0.5 overflow-y-auto overflow-x-hidden p-4 py-0 font-semibold ps ps--active-y" x-data="{ activeDropdown: 'dashboard' }">
-                        <?php if(!empty($datanya['level'])) {
-?>
+                        
+
                         <li class="nav-item">
                                         <a href="index.php" class="active group">
                                             <div class="flex items-center">
@@ -27,6 +27,8 @@
                                             </div>
                                         </a>
                                     </li>
+                                    <?php if(!empty($datanya['level'])) {
+                                        ?>
                                     <li class="nav-item">
                                         <a href="voting.php">
                                             <div class="flex items-center">
@@ -55,6 +57,7 @@
                                             </div>
                                         </a>
                                     </li>
+                                    
                                     <li class="nav-item">
                                         <a href="kontak.php">
                                             <div class="flex items-center">
