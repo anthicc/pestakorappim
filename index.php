@@ -10,6 +10,9 @@ header("Location: login.php");
 $nit = $_SESSION['nit'];
 $user = $mysqli->query("select * from users where nit = '$nit'");
 $datanya = $user->fetch_assoc();
+
+$cek = $mysqli->query("select * from pemilihan where nit = '$nit'");
+$cekk = $cek->num_rows;
 ?>
         <!-- sidebar menu overlay -->
         <div x-cloak class="fixed inset-0 z-50 bg-[black]/60 lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
@@ -98,7 +101,12 @@ export default {
                                     </div>
                                     <p class="text-lg dark:text-white-light/90">Selamat datang di <span class="ml-2 text-primary">PESTAKORA 2023</span></p>
                                     <p class="text-lg dark:text-white-light/120">Detail akun: <span class="ml-2 text-danger"><?php echo $datanya['nama']; ?></span> / <span class="ml-2 text-danger"><?php echo $datanya['prodi']; ?></span></p>
+                                    <?php if($cekk > "0") { ?>
+                                   <p class="text-lg dark:text-white-light/100">Status: <span class="ml-2 text-success">Sudah Memilih</span></p>
 
+                                  <?php  } else { ?>
+                                    <p class="text-lg dark:text-white-light/100">Status: <span class="ml-2 text-warning">Belum memilih</span></p>
+                                    <?php } ?>
                                     <div class="relative overflow-hidden">
                                         
                                     </div>

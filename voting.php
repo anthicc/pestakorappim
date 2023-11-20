@@ -179,7 +179,7 @@ if ($query) {
     Swal.fire({
         icon: 'success',
         title: 'Success!',
-        text: 'Data berhasil disubmit.',
+        text: 'Pilihan anda telah disimpan. Terimakasih telah berpartisipasi dalam PESTAKORA 2023!',
         padding: '2em'
     }).then((result) => {
         if (result.isConfirmed) {
