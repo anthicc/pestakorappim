@@ -21,4 +21,8 @@
         
     </head>
    
-    <body x-data="main" class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased horizontal full ltr" :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu, $store.app.layout,$store.app.rtlClass]">
+    <body
+        x-data="main"
+        class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased full ltr"
+        :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu, $store.app.layout,$store.app.rtlClass]"
+    >
