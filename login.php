@@ -377,12 +377,9 @@ document.addEventListener("alpine:init", () => {
     });
  });
  </script>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <!-- end main content section -->
-                </div>
+ 
+                    
+                
 
                 <?php include ('footer.php'); ?>
     </body>
