@@ -119,6 +119,7 @@ include('header.php');
 
 $danyon = $_GET['danyon'];
 $kadem = $_GET['kadem'];
+$wakadem = $_GET['wakadem'];
 
 if ($danyon != 1 && $danyon != 2 && $danyon != 3) {
     ?>
@@ -170,9 +171,24 @@ if ($danyon != 1 && $danyon != 2 && $danyon != 3) {
 });
             </script>
 <?php
+
+} else if ($wakadem != 1 && $wakadem != 2 && $wakadem != 3) {
+    
+    ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'Invalid Option.',
+        padding: '2em'
+    });
+});
+            </script>
+<?php
 }
 else {
-$query = $mysqli->query("insert into pemilihan values ('','$nit','$danyon','$kadem','$waktu')");
+$query = $mysqli->query("insert into pemilihan values ('','$nit','$danyon','$kadem','$wakadem','$waktu')");
 if ($query) {
 ?><script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -221,7 +237,7 @@ if ($query) {
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -250,7 +266,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -281,7 +297,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -316,7 +332,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -345,7 +361,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -376,7 +392,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="https://docplayer.info/docs-images/110/190404858/images/1-4.jpg" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -397,9 +413,103 @@ Abda Zuljiva Aslam - TEP2A<br>
         </div>
     </div>
 </div>
+
 </div>
+<div class="mb-1 grid gap-1 xl:grid-cols-1">
+        <br><br>
+                                <div class="panel h-full xl:col-span-2">
+                                    <div class="mb-5 flex items-center dark:text-white-light">
+                                        <h4 class="text-lg font-semibold">Voting Calon Wakil Ketua Demustar</h4>
+                                        <hr>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        
+    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+        <div class="py-7 px-6">
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            </div>
+            <div style="text-align: center;">
+    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+        1
+    </h4>
+</div>
+<p style="text-align: center; font-weight: bold;">
+Abda Zuljiva Aslam - TEP2A<br>
+                Abda Zuljiva Aslam - TEP2A
+            </p><br><br>
+            <div style="text-align: center;">
+    <label class="inline-flex" style="font-size: 18px;">
+        <input type="radio" name="wakadem" id="wakadem" value="1" class="form-radio" />
+        <span style="margin-left: 8px;">Pilih Paslon 1</span>
+    </label>
+</div>
+       </div>
+    </div>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <!-- Card kedua -->    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+
+    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+        <div class="py-7 px-6">
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            </div>
+            <div style="text-align: center;">
+    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+        2
+    </h4>
+</div>
+<p style="text-align: center; font-weight: bold;">
+Abda Zuljiva Aslam - TEP2A<br>
+                Abda Zuljiva Aslam - TEP2A
+            </p>           
+            <br><br>
+            <div style="text-align: center;">
+    <label class="inline-flex" style="font-size: 18px;">
+        <input type="radio" name="wakadem" id="wakadem" value="2" class="form-radio" />
+        <span style="margin-left: 8px;">Pilh Paslon 2</span>
+    </label>
+</div>
+        </div>
+    </div>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <!-- Card kedua -->    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+
+    <!-- Card ketiga -->
+    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+        <div class="py-7 px-6">
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            </div>
+            <div style="text-align: center;">
+    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+        3
+    </h4>
+</div>
+
+<p style="text-align: center; font-weight: bold;">
+Abda Zuljiva Aslam - TEP2A<br>
+                Abda Zuljiva Aslam - TEP2A
+            </p><br><br>
+            <div style="text-align: center;">
+    <label class="inline-flex" style="font-size: 18px;">
+        <input type="radio" name="wakadem" id="wakadem" value="3" class="form-radio"/>
+        <span style="margin-left: 8px;">Pilih Paslon 3</span>
+    </label>
+</div>
+        </div>
+    </div>
+</div></div>
 <div style="display: flex; justify-content: center; margin-top: 50px;">
-<br><br>
+
     <button type="reset" class="btn btn-warning">Reset</button>
    &nbsp;&nbsp;
     <button type="button" name="submit" class="btn btn-success" @click="showAlert()">Submit</button>
@@ -407,13 +517,13 @@ Abda Zuljiva Aslam - TEP2A<br>
     function showAlert() {
         const danyon = document.querySelector('input[name="danyon"]:checked');
         const kadem = document.querySelector('input[name="kadem"]:checked');
-
-        if (!danyon || !kadem) {
+        const wakadem = document.querySelector('input[name="wakadem"]:checked');
+        if (!danyon || !kadem || !wakadem) {
             // Jika salah satu input radio tidak dipilih
             Swal.fire({
                 icon: 'error',
                 title: 'Error!',
-                text: 'Please select both Danyon and Kadem.',
+                text: 'Please select both Danyon and Kadem/Wakadem.',
                 padding: '2em'
             });
         } else {
@@ -428,7 +538,7 @@ Abda Zuljiva Aslam - TEP2A<br>
             }).then((result) => {
                 if (result.value) {
                     // Redirect ke halaman PHP dengan mengirim data menggunakan query string
-                    window.location.href = `voting.php?danyon=${danyon.value}&kadem=${kadem.value}`;
+                    window.location.href = `voting.php?danyon=${danyon.value}&kadem=${kadem.value}&wakadem=${wakadem.value}`;
                 }
             });
     }
@@ -439,7 +549,7 @@ Abda Zuljiva Aslam - TEP2A<br>
 
 </form>
                                         
-                                    </div>
+                                    
                                     
                                 </div>
                                 
@@ -484,41 +594,8 @@ document.addEventListener("alpine:init", () => {
 </div>
 
 <!-- script -->
-<script>
-document.addEventListener("alpine:init", () => {
-    Alpine.data("countdown", () => ({
-        timer2: null,
-        demo2: {
-            days: null,
-            hours: null,
-            minutes: null,
-            seconds: null,
-        },
-        
-        setTimerDemo2() {
-            let date = new Date();
-            date.setFullYear(date.getFullYear() + 1);
-            let countDownDate = date.getTime();
 
-            this.timer2 = setInterval(() => {
-                let now = new Date().getTime();
-
-                let distance = countDownDate - now;
-
-                this.demo2.days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                this.demo2.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                this.demo2.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                this.demo2.seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                if (distance < 0) {
-                    clearInterval(this.timer2);
-                }
-            }, 500);
-        },
-    });
- });
- </script>
-                                    </div>
+                                    
                                 
 
                 <?php include ('footer.php'); ?>

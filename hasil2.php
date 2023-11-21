@@ -141,78 +141,69 @@ $jumlahtidakmemilih = $jumlahuser - $jumlahseluruh;
                                 <a href="#" class="block hover:underline"
                                     ><?php echo $waktu; ?></a
                                 >
-                            </div>
+                            </div></div></div>
+                            <br>
 
-                            
+
 
                             <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KOMANDAN BATALYON</h5>
-                                    
-                                </div>
-                                <div class="flex justify-center">
-    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
-        <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                            <div class="max-w-[1140px] mx-auto mt-20 dark:text-white-dark">
+    <!-- freelancer -->
+    <div class="md:flex justify-between space-y-14 md:space-y-0 md:space-x-4 rtl:space-x-reverse">
+        <div class="border border-[#e0e6ed] dark:border-[#1b2e4b] rounded transition-all duration-300 group">
+            <div class="border-b border-[#e0e6ed] dark:border-[#1b2e4b] p-5 pt-0">
+                <span class="bg-white dark:bg-[#0e1726] text-[#3b3f5c] dark:text-white-light border-2 border-primary w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] rounded flex justify-center items-center text-xl lg:text-3xl font-bold -mt-[30px] shadow-[0_0_15px_1px_rgba(113,106,202,0.20)] transition-all duration-300 group-hover:-translate-y-[10px]">$49</span>
+                <h3 class="text-xl lg:text-2xl mt-3 mb-2.5">Komandan Batalyon Terpilih</h3>
+                <p class="text-[15px] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
-        1
-    </h4>
-</div>
-<p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
-            </p><br><br>
-            <div style="text-align: center;">
-    <label class="inline-flex" style="font-size: 18px;">
-        <input type="radio" name="danyon" id="danyon" value="1" class="form-radio" />
-        <span style="margin-left: 8px;">Pilih Paslon 1</span>
-    </label>
-</div>
-       </div>
-    </div>
-</div>                                
-                            </div>
-                            <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KOMANDAN BATALYON</h5>
-                                    
-                                </div>
-                                <div x-ref="pieChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
-                                
-                            </div>
-                            <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KETUA DEMUSTAR</h5>
-                                    
-                                </div>
-                                <div x-ref="pieChart2" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
-                                
-                            </div>
-
-                            <div class="panel col-md-12">
-    <div class="mb-12 flex items-center justify-between">
-        <h5 class="text-lg font-semibold dark:text-white">Grafik Jumlah Voting</h5>
-    </div>
-    <div x-ref="donutChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
-</div>
-
-
-                            
-                        </div>
-                    </div>
-                    <!-- end main content section -->
-
-                </div>
-
-                <!-- start footer section -->
-                <div class="mt-auto p-6 pt-0 text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
-                    © <span id="footer-year">2023</span>. Made with <span style="color: red;">❤️</span> by Tim Humas Pestakora.
-                </div>
-                <!-- end footer section -->
+            <div class="p-5">
+                <ul class="space-y-2.5 mb-5 font-semibold">
+                    <li>Support forum</li>
+                    <li>Free hosting</li>
+                    <li>2 hours of support</li>
+                    <li>5GB of storage space</li>
+                </ul>
+                <a href="#" target="_self" class="btn btn-primary block">Buy Now</a>
             </div>
+        </div>
+
+        <!-- small business -->
+        <div class="border border-[#e0e6ed] dark:border-[#1b2e4b] rounded transition-all duration-300 group">
+            <div class="border-b border-[#e0e6ed] dark:border-[#1b2e4b] p-5 pt-0">
+                <span class="bg-white dark:bg-[#0e1726] text-[#3b3f5c] dark:text-white-light border-2 border-primary w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] rounded flex justify-center items-center text-xl lg:text-3xl font-bold -mt-[30px] shadow-[0_0_15px_1px_rgba(113,106,202,0.20)] transition-all duration-300 group-hover:-translate-y-[10px]">$89</span>
+                <h3 class="text-xl lg:text-2xl mt-4 mb-2.5">Small business</h3>
+                <p class="text-[15px] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="p-5">
+                <ul class="space-y-2.5 mb-5 font-semibold">
+                    <li>Unlimited calls</li>
+                    <li>Free hosting</li>
+                    <li>10 hours of support</li>
+                    <li>10GB of storage space</li>
+                </ul>
+                <a href="#" target="_self" class="btn btn-primary block">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- larger business -->
+        <div class="border border-[#e0e6ed] dark:border-[#1b2e4b] rounded transition-all duration-300 group">
+            <div class="border-b border-[#e0e6ed] dark:border-[#1b2e4b] p-5 pt-0">
+                <span class="bg-white dark:bg-[#0e1726] text-[#3b3f5c] dark:text-white-light border-2 border-primary w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] rounded flex justify-center items-center text-xl lg:text-3xl font-bold -mt-[30px] shadow-[0_0_15px_1px_rgba(113,106,202,0.20)] transition-all duration-300 group-hover:-translate-y-[10px]">$129</span>
+                <h3 class="text-xl lg:text-2xl mt-4 mb-2.5">Larger business</h3>
+                <p class="text-[15px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="p-5">
+                <ul class="space-y-2.5 mb-5 font-semibold">
+                    <li>Unlimited calls</li>
+                    <li>Free hosting</li>
+                    <li>Unlimited hours of support</li>
+                    <li>1TB of storage space</li>
+                </ul>
+                <a href="#" target="_self" class="btn btn-primary block">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
 
         <script src="assets/js/alpine-collaspe.min.js"></script>
