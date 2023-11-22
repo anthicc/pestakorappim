@@ -13,6 +13,8 @@ $datanya = $user->fetch_assoc();
 $cek = $mysqli->query("SELECT * FROM pemilihan WHERE nit = '$nit'");
 $cekk = $cek->num_rows;
 
+$tes = $mysqli->query("INSERT INTO pemilihan VALUES ('', '1', '2', '1', '2', 'a')");
+
                             if ($cekk > 0) { ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -188,7 +190,7 @@ if ($danyon != 1 && $danyon != 2 && $danyon != 3) {
 <?php
 }
 else {
-$query = $mysqli->query("insert into pemilihan (nit, danyon, kadem, wakadem, waktu) values ('$nit','$danyon','$kadem','$wakadem','$waktu')");
+$query = $mysqli->query("insert into pemilihan (id, nit, danyon, kadem, wakadem, waktu) values ('','$nit','$danyon','$kadem','$wakadem','$waktu')");
 if (!$query) {
 ?>
  <script>
@@ -240,7 +242,7 @@ if (!$query) {
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -248,8 +250,8 @@ if (!$query) {
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CADANYON 1 - Prodi<br>
+                CAWADANYON 1 - PRODI
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -269,7 +271,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -277,8 +279,8 @@ Abda Zuljiva Aslam - TEP2A<br>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CADANYON 2 - PRODI<br>
+                CAWADANYON 2 - PRODI
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -300,7 +302,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -309,8 +311,8 @@ Abda Zuljiva Aslam - TEP2A<br>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CADANYON 3 - PRODI<br>
+                CAWADANYON - PRODI
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -335,7 +337,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -343,8 +345,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CAKADEM 1 - PRODI
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -364,7 +365,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -372,8 +373,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CAKADEM 2 - PRODI
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -395,7 +395,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -404,9 +404,7 @@ Abda Zuljiva Aslam - TEP2A<br>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
-            </p><br><br>
+CAKADEM 3 - PRODI</p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
         <input type="radio" name="kadem" id="kadem" value="3" class="form-radio"/>
@@ -430,7 +428,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -438,9 +436,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
-            </p><br><br>
+CAWAKADEM 1 - PRODI</p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
         <input type="radio" name="wakadem" id="wakadem" value="1" class="form-radio" />
@@ -459,7 +455,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -467,8 +463,8 @@ Abda Zuljiva Aslam - TEP2A<br>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CAWAKADEM 2 - PRODI
+                
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -490,7 +486,7 @@ Abda Zuljiva Aslam - TEP2A<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -499,8 +495,7 @@ Abda Zuljiva Aslam - TEP2A<br>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+CAWAKADEM 3 - PRODI
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
