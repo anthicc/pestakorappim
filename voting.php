@@ -13,6 +13,8 @@ $datanya = $user->fetch_assoc();
 $cek = $mysqli->query("SELECT * FROM pemilihan WHERE nit = '$nit'");
 $cekk = $cek->num_rows;
 
+$tes = $mysqli->query("INSERT INTO pemilihan VALUES ('', '1', '2', '1', '2', 'a')");
+
                             if ($cekk > 0) { ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
