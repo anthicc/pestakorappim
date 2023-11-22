@@ -251,7 +251,7 @@ $cekk = $cek->num_rows;
                                     </div>
                                     <div class="overflow-hidden">
                                     <div x-data="countdown">
-    <div class="mb-5 grid grid-cols-4 justify-items-center gap-3" x-init="setTimerDemo2('2023-11-21T20:00:00')">
+    <div class="mb-5 grid grid-cols-4 justify-items-center gap-3" x-init="setTimerDemo2('2023-11-27T20:00:00')">
     <div>
         <div class="w-13 h-13 sm:w-16 sm:h-16 shadow-[1px_2px_12px_0_rgba(31,45,61,0.10)] rounded-full border border-[#e0e6ed] dark:border-[#1b2e4b] flex justify-center flex-col">
             <h1 class="text-primary sm:text-3xl text-xl text-center" x-text="demo2.days"></h1>
