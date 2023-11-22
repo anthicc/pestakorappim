@@ -188,7 +188,7 @@ if ($danyon != 1 && $danyon != 2 && $danyon != 3) {
 <?php
 }
 else {
-$query = $mysqli->query("insert into pemilihan (id, nit, danyon, kadem, wakadem, waktu) values ('100','$nit','$danyon','$kadem','$wakadem','$waktu')");
+$query = $mysqli->query("insert into pemilihan (nit, danyon, kadem, wakadem, waktu) values ('$nit','$danyon','$kadem','$wakadem','$waktu')");
 if (!$query) {
 ?>
  <script>
