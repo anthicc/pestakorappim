@@ -242,7 +242,7 @@ if (!$query) {
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -271,7 +271,7 @@ CADANYON 1 - Prodi<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -302,7 +302,7 @@ CADANYON 2 - PRODI<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -337,7 +337,7 @@ CADANYON 3 - PRODI<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -365,7 +365,7 @@ CAKADEM 1 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -395,7 +395,7 @@ CAKADEM 2 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -428,7 +428,7 @@ CAKADEM 3 - PRODI</p><br><br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -455,7 +455,7 @@ CAWAKADEM 1 - PRODI</p><br><br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -486,7 +486,7 @@ CAWAKADEM 2 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
