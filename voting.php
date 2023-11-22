@@ -190,21 +190,7 @@ if ($danyon != 1 && $danyon != 2 && $danyon != 3) {
 else {
 $query = $mysqli->query("insert into pemilihan values ('','$nit','$danyon','$kadem','$wakadem','$waktu')");
 if ($query) {
-?><script>
-    document.addEventListener('DOMContentLoaded', function () {
-    Swal.fire({
-        icon: 'success',
-        title: 'Success!',
-        text: 'Pilihan anda telah disimpan. Terimakasih telah berpartisipasi dalam PESTAKORA 2023!',
-        padding: '2em'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            // Arahkan ke index.php jika tombol "OK" ditekan
-            window.location.href = 'index.php';
-        }
-    });
-});
-    </script> <?php
+?>Sukses<?php
 } else {
     ?>
     <script>
