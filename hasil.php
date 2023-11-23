@@ -42,6 +42,49 @@ $jumlahwakadem2 = $hasilkadem2->num_rows;
 $hasilwakadem3 = $mysqli->query("select * from pemilihan where kadem = '3'");
 $jumlahwakadem3 = $hasilkadem3->num_rows;
 
+
+if($jumlahdanyon1 > $jumlahdanyon2 && $jumlahdanyon1 > $jumlahdanyon3) {
+    $jumlahdanyon = $jumlahdanyon1;
+    $danyon = "CADANYON 1 - PRODI<br> CAWADANYON 1 - PRODI";
+    $urutdanyon = "1";
+} else if($jumlahdanyon2 > $jumlahdanyon3 && $jumlahdanyon2 > $jumlahdanyon3) {
+    $jumlahdanyon = $jumlahdanyon2;
+    $danyon = "CADANYON 2 - PRODI<br> CAWADANYON 2 - PRODI";
+    $urutdanyon = "2";
+} else {
+    $jumlahdanyon = $jumlahdanyon3;
+    $danyon = "CADANYON 3 - PRODI<br> CAWADANYON 3 - PRODI";
+    $urutdanyon = "3";
+}
+
+if($jumlahkadem1 > $jumlahkadem2 && $jumlahkadem1 > $jumlahkadem3) {
+    $jumlahkadem = $jumlahkadem1;
+    $kadem = "CAKADEM 1 - PRODI";
+    $urutkadem = "1";
+} else if($jumlahkadem2 > $jumlahkadem1 && $jumlahkadem2 > $jumlahkadem3) {
+    $jumlahkadem = $jumlahkadem2;
+    $kadem = "CAKADEM 2 - PRODI";
+    $urutkadem = "2";
+} else {
+    $jumlahkadem = $jumlahkadem3;
+    $kadem = "CAKADEM 3 - PRODI";
+    $urutkadem = "3";
+}
+
+if($jumlahwakadem1 > $jumlahwakadem2 && $jumlahwakadem1 > $jumlahwakadem3) {
+    $jumlahwakadem = $jumlahwakadem1;
+    $wakadem = "CAWAKADEM 1 - PRODI";
+    $urutwakadem = "1";
+} else if($jumlahwakadem2 > $jumlahwakadem1 && $jumlahwakadem2 > $jumlahwakadem3) {
+    $jumlahwakadem = $jumlahwakadem2;
+    $wakadem = "CAWAKADEM 2 - PRODI";
+    $urutwakadem = "2";
+} else {
+    $jumlahwakadem = $jumlahwakadem3;
+    $wakadem = "CAWAKADEM 3 - PRODI";
+    $urutwakadem = "3";
+}
+
 $seluruh = $mysqli->query("select * from pemilihan");
 $jumlahseluruh = $seluruh->num_rows;
 
@@ -141,80 +184,144 @@ $jumlahtidakmemilih = $jumlahuser - $jumlahseluruh;
                                 <a href="#" class="block hover:underline"
                                     ><?php echo $waktu; ?></a
                                 >
-                            </div>
+                            </div></div></div>
+                            <br>
 
-                            
 
-                            <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KOMANDAN BATALYON</h5>
-                                    
-                                </div>
-                                <div class="flex justify-center">
+
+                            <div class="pt-5">
+                            <div class="mb-1 grid gap-1 xl:grid-cols-1">
+                                <div class="panel h-full xl:col-span-2">
+                                    <div class="mb-5 flex items-center dark:text-white-light">
+                                        <h4 class="text-lg font-semibold">Hasil Pemilihan</h4>
+                                        <hr>
+                                    </div>
+                                    <div class="flex justify-center">
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
-        1
+            <p class="text-primary text-m mb-1.5 font-bold">Paslon Komandan Batalyon Terpilih</p>
+
+    <h4 class="badge inline-block" style="background-color: blue; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
+        <?php echo $urutdanyon; ?>
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-Abda Zuljiva Aslam - TEP2A<br>
-                Abda Zuljiva Aslam - TEP2A
+<?php echo $danyon; ?>
             </p><br><br>
             <div style="text-align: center;">
-    <label class="inline-flex" style="font-size: 18px;">
-        <input type="radio" name="danyon" id="danyon" value="1" class="form-radio" />
-        <span style="margin-left: 8px;">Pilih Paslon 1</span>
+            <label class="inline-flex" style="font-size: 14px;">
+    <p class="text-white-dark ">Total Suara: <b><?php echo $jumlahdanyon; ?> Suara</b></p>
+
     </label>
 </div>
        </div>
     </div>
-</div>                                
-                            </div>
-                            <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KOMANDAN BATALYON</h5>
-                                    
-                                </div>
-                                <div x-ref="pieChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
-                                
-                            </div>
-                            <div class="panel">
-                                <div class="mb-5 flex items-center justify-between">
-                                    <h5 class="text-lg font-semibold dark:text-white">Grafik Hasil Pemilihan KETUA DEMUSTAR</h5>
-                                    
-                                </div>
-                                <div x-ref="pieChart2" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
-                                
-                            </div>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <!-- Card kedua -->    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
 
-                            <div class="panel col-md-12">
-    <div class="mb-12 flex items-center justify-between">
-        <h5 class="text-lg font-semibold dark:text-white">Grafik Jumlah Voting</h5>
+    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+        <div class="py-7 px-6">
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+            </div>
+            <div style="text-align: center;">
+            <p class="text-primary text-m mb-1.5 font-bold">Ketua Demustar Terpilih</p>
+
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: white;">
+        <?php echo $urutkadem; ?>
+    </h4>
+</div>
+<p style="text-align: center; font-weight: bold;">
+<?php echo $kadem; ?>            </p>           
+            <br><br>
+            <div style="text-align: center;">
+            <label class="inline-flex" style="font-size: 14px;">
+    <p class="text-white-dark ">Total Suara: <b><?php echo $jumlahkadem; ?> Suara</b></p>
+
+    </label>
+</div>
+        </div>
     </div>
-    <div x-ref="donutChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <!-- Card kedua -->    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+
+    <!-- Card ketiga -->
+    <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+        <div class="py-7 px-6">
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
+                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+            </div>
+            <div style="text-align: center;">
+            <p class="text-primary text-m mb-1.5 font-bold">Wakil Ketua Demustar Terpilih</p>
+
+    <h4 class="badge inline-block" style="background-color: #FAFAD2; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
+        <?php echo $urutwakadem; ?>
+    </h4>
 </div>
 
+<p style="text-align: center; font-weight: bold;">
+CAWAKADEM 1 - PRODI
+            </p><br><br>
+            <div style="text-align: center;">
+    <label class="inline-flex" style="font-size: 14px;">
+    <p class="text-white-dark ">Total Suara: <b><?php echo $jumlahwakadem; ?> Suara</b></p>
 
-                            
-                        </div>
-                    </div>
-                    <!-- end main content section -->
+    </label>
+</div>
+        </div>
+    </div>
+</div>
 
-                </div>
+    </div>
+    <div class="mb-1 grid gap-1 xl:grid-cols-1">
+                                <div class="panel h-full xl:col-span-2">
+                                    <div class="mb-5 flex items-center dark:text-white-light">
+                                        <h4 class="text-lg font-semibold">Hasil Pemilihan</h4>
+                                        <hr>
+                                    </div>
+                                    <div class="flex justify-center">
+    <div class="text-center">
+        <p class="font-semibold">Danyon</p>
+        <div x-ref="pieChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
+    </div>
 
-                <!-- start footer section -->
-                <div class="mt-auto p-6 pt-0 text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
+    <div class="text-center">
+        <p class="font-semibold">Kadem</p>
+        <div x-ref="pieChart2" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
+    </div>
+
+    <div class="text-center">
+        <p class="font-semibold">Wakadem</p>
+        <div x-ref="pieChart3" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
+    </div>
+
+    <div class="text-center">
+        <p class="font-semibold">Pemilih</p>
+        <div x-ref="donutChart" class="rounded-lg bg-white dark:bg-black overflow-hidden"></div>
+    </div>
+</div>
+
+</div>
+</div></div>
+<br><br>
+<div class="mt-auto p-6 pt-0 text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
                     © <span id="footer-year">2023</span>. Made with <span style="color: red;">❤️</span> by Tim Humas Pestakora.
                 </div>
                 <!-- end footer section -->
             </div>
         </div>
-
         <script src="assets/js/alpine-collaspe.min.js"></script>
         <script src="assets/js/alpine-persist.min.js"></script>
         <script defer src="assets/js/alpine-ui.min.js"></script>
@@ -463,6 +570,7 @@ Abda Zuljiva Aslam - TEP2A<br>
                     radarChart: null,
                     pieChart: null,
                     pieChart2: null,
+                    pieChart3: null,
 
                     donutChart: null,
                     polarAreaChart: null,
@@ -501,6 +609,9 @@ Abda Zuljiva Aslam - TEP2A<br>
                             this.pieChart2 = new ApexCharts(this.$refs.pieChart2, this.pieChart2Options);
                             this.pieChart2.render();
 
+                            this.pieChart3 = new ApexCharts(this.$refs.pieChart3, this.pieChart3Options);
+                            this.pieChart3.render();
+
                             this.donutChart = new ApexCharts(this.$refs.donutChart, this.donutChartOptions);
                             this.donutChart.render();
 
@@ -535,6 +646,7 @@ Abda Zuljiva Aslam - TEP2A<br>
                         this.radarChart.updateOptions(this.radarChartOptions);
                         this.pieChart.updateOptions(this.pieChartOptions);
                         this.pieChart2.updateOptions(this.pieChart2Options);
+                        this.pieChart3.updateOptions(this.pieChart3Options);
                         this.donutChart.updateOptions(this.donutChartOptions);
                         this.polarAreaChart.updateOptions(this.polarAreaChartOptions);
                         this.radialBarChart.updateOptions(this.radialBarChartOptions);
@@ -971,7 +1083,7 @@ Abda Zuljiva Aslam - TEP2A<br>
                                     show: false,
                                 },
                             },
-                            labels: ['Paslon A', 'Paslon B', 'Paslon C', 'Tidak memilih'],
+                            labels: ['Paslon 1', 'Paslon 2', 'Paslon 3', 'Tidak memilih'],
                             colors: ['#4361ee', '#e7515a', '#e2a03f', '#a4aba7'],
                             responsive: [
                                 {
@@ -1006,7 +1118,7 @@ Abda Zuljiva Aslam - TEP2A<br>
                                     show: false,
                                 },
                             },
-                            labels: ['Paslon A', 'Paslon B', 'Paslon C', 'Tidak memilih'],
+                            labels: ['Calon A', 'Calon B', 'Calon C', 'Tidak memilih'],
                             colors: ['#4361ee', '#e7515a', '#e2a03f', '#a4aba7'],
                             responsive: [
                                 {
@@ -1027,6 +1139,42 @@ Abda Zuljiva Aslam - TEP2A<br>
                             },
                         };
                     },
+
+                    get pieChart3Options() {
+                        return {
+                            series: [<?php echo $jumlahwakadem1; ?>, <?php echo $jumlahwakadem2; ?>, <?php echo $jumlahwakadem3; ?>, <?php echo $jumlahtidakmemilih; ?>],
+                            chart: {
+                                height: 300,
+                                type: 'pie',
+                                zoom: {
+                                    enabled: false,
+                                },
+                                toolbar: {
+                                    show: false,
+                                },
+                            },
+                            labels: ['Calon A', 'Calon B', 'Calon C', 'Tidak memilih'],
+                            colors: ['#4361ee', '#e7515a', '#e2a03f', '#a4aba7'],
+                            responsive: [
+                                {
+                                    breakpoint: 480,
+                                    options: {
+                                        chart: {
+                                            width: 600,
+                                            height: 600
+                                        },
+                                    },
+                                },
+                            ],
+                            stroke: {
+                                show: false,
+                            },
+                            legend: {
+                                position: 'bottom',
+                            },
+                        };
+                    },
+
 
                     get donutChartOptions() {
                         return {
