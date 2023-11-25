@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 ob_flush();
 include('koneksi.php');
@@ -12,6 +11,33 @@ $datanya = $user->fetch_assoc();
 
 $cek = $mysqli->query("SELECT * FROM pemilihan WHERE nit = '$nit'");
 $cekk = $cek->num_rows;
+
+$haha = $mysqli->query("SELECT * FROM waktu");
+$dat = $haha->fetch_assoc();
+if($dat['status'] == 0 ) { ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        showError();
+    });
+
+    function showError() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Waktu Voting Belum Dimulai!',
+            padding: '2em',
+            confirmButtonText: 'OK'  // Menampilkan tombol "OK"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Arahkan ke index.php jika tombol "OK" ditekan
+                window.location.href = 'index.php';
+            }
+        });
+    }
+</script>
+<?php }
 
                             if ($cekk > 0) { ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
@@ -240,16 +266,16 @@ if (!$query) {
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
         1
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CADANYON 1 - Prodi<br>
-                CAWADANYON 1 - PRODI
+NUHA RANTISI SUKOCO - TMP 2B<br>
+                DAFFA RAFI MAHENDRA - MTP 2A
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -269,16 +295,16 @@ CADANYON 1 - Prodi<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
         2
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CADANYON 2 - PRODI<br>
-                CAWADANYON 2 - PRODI
+DICKI EKA SAPUTRA - MTP 2C<br>
+PUTRO DWI HANDOKO 2 - TMP 2A
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -300,17 +326,17 @@ CADANYON 2 - PRODI<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
         3
     </h4>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-CADANYON 3 - PRODI<br>
-                CAWADANYON - PRODI
+ABDILLAH HALIM - TMP 2A<br>
+MUHADZDZIB IRSYAD MAS'UD - TEP 2A
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -335,15 +361,15 @@ CADANYON 3 - PRODI<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
         1
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CAKADEM 1 - PRODI
+ANDICO BAGUS ANGGRIAWAN - MTP 3A
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
@@ -363,15 +389,15 @@ CAKADEM 1 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
         2
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CAKADEM 2 - PRODI
+MIFTAH FARID - TEP 3B
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -393,16 +419,16 @@ CAKADEM 2 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
         3
     </h4>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-CAKADEM 3 - PRODI</p><br><br>
+KEMAL AZIT WIRAYUDA - TEP 3A</p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
         <input type="radio" name="kadem" id="kadem" value="3" class="form-radio"/>
@@ -426,15 +452,15 @@ CAKADEM 3 - PRODI</p><br><br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
         1
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CAWAKADEM 1 - PRODI</p><br><br>
+AFAN HAFID HANAFI - TBJP 2B</p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">
         <input type="radio" name="wakadem" id="wakadem" value="1" class="form-radio" />
@@ -453,15 +479,15 @@ CAWAKADEM 1 - PRODI</p><br><br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
         2
     </h4>
 </div>
 <p style="text-align: center; font-weight: bold;">
-CAWAKADEM 2 - PRODI
+GILANG FAJAR ATHOILLA - TEP 2A
                 
             </p>           
             <br><br>
@@ -484,16 +510,16 @@ CAWAKADEM 2 - PRODI
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="icon.png" alt="image" class="w-full h-full object-cover" />
+                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
-    <h4 class="badge inline-block" style="background-color: gold; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
+    <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
         3
     </h4>
 </div>
 
 <p style="text-align: center; font-weight: bold;">
-CAWAKADEM 3 - PRODI
+TIMOTHY ALBERTUS ANDIKA M. - MTP 2B
             </p><br><br>
             <div style="text-align: center;">
     <label class="inline-flex" style="font-size: 18px;">

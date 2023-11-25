@@ -346,9 +346,6 @@ $datanya['level'] = "";
                                     <li>
                                         <a href="user.php">Pengaturan User</a>
                                     </li>
-                                    <li>
-                                        <a href="waktu.php">Pengaturan Waktu</a>
-                                    </li>
                                    
                                 </ul>
                             </li>

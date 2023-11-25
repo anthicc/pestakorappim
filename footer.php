@@ -1,6 +1,6 @@
 <!-- start footer section -->
 <div class="mt-auto p-6 pt-0 text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
-                    © <span id="footer-year">2023</span>. Made with <span style="color: red;">❤️</span> by Tim Humas Pestakora.
+                    © <span id="footer-year">2023</span>. Made with <span style="color: red;">🔥</span> by Tim Humas Pestakora.
                 </div>
                 <!-- end footer section -->
             </div>
