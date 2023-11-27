@@ -266,8 +266,48 @@ if (!$query) {
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
-            </div>
+            <style>
+        .container {
+            display: flex;
+        }
+
+        .half-image {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .half-image img {
+            width: 120%; /* Lebih besar dari container untuk mencakup setengahnya */
+            transition: transform 0.5s ease;/* Efek transisi hover */
+        }
+
+        .half-image:hover img {
+            transform: scale(1.2);
+        }
+
+        .photo-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .enlarge-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .enlarge-image:hover {
+            transform: scale(1.5);
+        }
+    </style>
+           <div class="container">
+    <div class="half-image">
+        <img src="image/danyon1.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+    <div class="half-image">
+        <img src="image/wadanyon1.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+</div>            </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
         1
@@ -295,7 +335,14 @@ NUHA RANTISI SUKOCO - TMP 2B<br>
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="container">
+    <div class="half-image">
+        <img src="image/danyon2.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+    <div class="half-image">
+        <img src="image/wadanyon2.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+</div>      
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -304,7 +351,7 @@ NUHA RANTISI SUKOCO - TMP 2B<br>
 </div>
 <p style="text-align: center; font-weight: bold;">
 DICKI EKA SAPUTRA - MTP 2C<br>
-PUTRO DWI HANDOKO 2 - TMP 2A
+PUTRO DWI HANDOKO - TMP 2A
             </p>           
             <br><br>
             <div style="text-align: center;">
@@ -326,7 +373,14 @@ PUTRO DWI HANDOKO 2 - TMP 2A
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
             <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="container">
+    <div class="half-image">
+        <img src="image/danyon3.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+    <div class="half-image">
+        <img src="image/wadanyon3.jpg" alt="image" class="w-full h-full object-cover" />
+    </div>
+</div>      
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: black;">
@@ -360,8 +414,8 @@ MUHADZDZIB IRSYAD MAS'UD - TEP 2A
                                         
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/kadem1.png" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
@@ -388,8 +442,8 @@ ANDICO BAGUS ANGGRIAWAN - MTP 3A
 
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/kadem2.jpg" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
@@ -418,8 +472,8 @@ MIFTAH FARID - TEP 3B
     <!-- Card ketiga -->
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/kadem3.jpg" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: #FAEBD7; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: red;">
@@ -451,8 +505,8 @@ KEMAL AZIT WIRAYUDA - TEP 3A</p><br><br>
                                         
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/wakadem1.jpg" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
@@ -478,8 +532,8 @@ AFAN HAFID HANAFI - TBJP 2B</p><br><br>
 
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/wakadem2.jpg" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
@@ -509,8 +563,8 @@ GILANG FAJAR ATHOILLA - TEP 2A
     <!-- Card ketiga -->
     <div class="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-[#e0e6ed] dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div class="py-7 px-6">
-            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
-                <img src="http://www.ambmedan.ac.id/wp-content/uploads/2022/05/truna-karton-1.png" alt="image" class="w-full h-full object-cover" />
+            <div class="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[400px] overflow-hidden">
+                <img src="image/wakadem3.jpg" alt="image" class="w-full h-full object-cover" />
             </div>
             <div style="text-align: center;">
     <h4 class="badge inline-block" style="background-color: red; border-radius: 50%; padding: 8px 12px; font-size: 24px; color: #FAEBD7;">
