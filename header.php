@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<!-- DEVELOPED BY anthicc-->
 <html lang="en" dir="ltr">
     
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
         <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>PESTAKORA 2023</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="PEMILIHAN KOMANDAN BATALYON, KETUA DEMUSTAR, DAN WAKIL KETUA DEMUSTAR PPI MADIUN PERIODE 2023/2024" />
-    <meta name="keywords" content="PESTAKORA, 2023, PEMIRA" />
-    <meta name="author" content="TIM HUMAS PESTAKORA" />
-    <link rel="icon" type="image/x-icon" href="PESTAKORA.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>PESTAKORA 2023</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="PESTAKORA.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com/" />
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
