@@ -411,6 +411,11 @@ $jumlahtidakmemilih = $jumlahuser - $jumlahseluruh;
         <canvas id="pieChart3" class="rounded-lg bg-white dark:bg-black"></canvas>
     </div>
 
+    <div class="text-center">
+        <p class="font-semibold">Statistik Pemilihan</p>
+        <canvas id="pieChart4" class="rounded-lg bg-white dark:bg-black"></canvas>
+    </div>
+
 </div>
 
 </div>

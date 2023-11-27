@@ -45,9 +45,12 @@ $jumlah = $conn->query("SELECT * FROM users");
 $jumlahh = $jumlah->num_rows;
 $tidakvote = $jumlahh - $suara1 - $suara2 - $suara3;
 
+$ha = $conn->query("SELECT * FROM pemilihan");
+$vote = $ha->num_rows;
+
 // Tutup koneksi
 $conn->close();
 
 // Kembalikan suara sebagai respons JSON
-echo json_encode([$suara1, $suara2, $suara3, $suara4, $suara5, $suara6, $suara7, $suara8, $suara9, $tidakvote]);
+echo json_encode([$suara1, $suara2, $suara3, $suara4, $suara5, $suara6, $suara7, $suara8, $suara9, $tidakvote, $vote]);
 ?>

@@ -599,7 +599,7 @@ TIMOTHY ALBERTUS ANDIKA M. - MTP 2B
             Swal.fire({
                 icon: 'error',
                 title: 'Error!',
-                text: 'Please select both Danyon and Kadem/Wakadem.',
+                text: 'Salah satu pilihan masih kosong. Silahkan cek kembali!',
                 padding: '2em'
             });
         } else {

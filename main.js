@@ -4,6 +4,8 @@ const canvas2 = document.getElementById('pieChart2');
 const ctx2 = canvas2.getContext('2d');
 const canvas3 = document.getElementById('pieChart3');
 const ctx3 = canvas3.getContext('2d');
+const canvas4 = document.getElementById('pieChart4');
+const ctx4 = canvas4.getContext('2d');
 
 function updateCharts() {
     // Gunakan AJAX untuk mengambil suara dari server
@@ -28,10 +30,20 @@ function updateCharts() {
             
             pieChart3.data.datasets[0].data = [suara[6], suara[7], suara[8], suara[9]];
 
+            pieChart4.data.labels = ['Taruna Tidak Memilih', 'Taruna Memilih'].map((label, index) => {
+                return `${label} (${suara[index + 9]})`;
+            });
+
+            pieChart4.data.datasets[0].data = [suara[9], suara[10]];
+
+
             // Gambar ulang grafik
             pieChart1.update();
             pieChart2.update();
             pieChart3.update();
+            pieChart4.update();
+            pieChart4.data.datasets[0].backgroundColor = ['#a4aba7', '#4caf50'];
+
         })
         .catch(error => console.error('Error:', error));
 }
@@ -70,6 +82,8 @@ function createPieChartt(ctx, suara, backgroundColor) {
 const pieChart1 = createPieChart(ctx1, [0, 0, 0, 0], ['red', 'yellow', 'green', 'gray']);
 const pieChart2 = createPieChartt(ctx2, [0, 0, 0, 0], ['red', 'yellow', 'green', 'gray']);
 const pieChart3 = createPieChartt(ctx3, [0, 0, 0, 0], ['red', 'yellow', 'green', 'gray']);
+
+const pieChart4 = createPieChart(ctx4, [0, 0], ['#a4aba7', '#4caf50']);
 
 // Jalankan update setiap detik
 setInterval(updateCharts, 1000);
